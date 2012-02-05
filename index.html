@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Community coworking space and center for independents in NYC. Bring a laptop and work alongside some of the awesomest people in NYC!">
+<meta name="keywords" content="coworking nyc, coworking new york, co-working nyc, new work city, nwc, nwcny, newworkcity, coworking, wifi">
+<title>New Work City | Coworking in New York City! | NYC </title>
+<!--[if IE]><script src="http://nwc.com/PasSML.js"></script><![endif]--> 
+<link rel="stylesheet" type="text/css" href="http://nwc.co/nwc.css" />
+<link rel="stylesheet" type="text/css" href="http://nwc.co/tweet/jquery.tweet.css" />
+
+<style>
+
+#yellowbox {
+       background-color:#fade28;
+       color: #000;
+       padding: 10px;
+       text-align:center;
+       border-radius:10px;
+       min-height: 82px;
+       margin-left: 10px;
+       vertical-align:middle;
+}
+
+#yellowbox:hover {
+       background-color: #ffc514;
+       color: #221;
+       text-decoration:none;
+}
+
+#greenbox {
+       background-color:#64a945; 
+       color: #000;
+       padding: 10px;
+       text-align:center;
+       border-radius:10px;
+       min-height: 82px;
+       margin-left: 10px;
+       vertical-align:middle;
+}
+
+#greenbox:hover {
+       background-color: #318928;
+       color: #020;
+       text-decoration:none;
+}
+
+#newsletter {
+       width:785px; background-color:#3072b4;padding:10px;margin:10px 0px; color:#fff;text-align:center;border-radius:10px;
+}
+
+#newsletter:hover {
+       background-color:#095fb6;
+}
+
+#faqbox {
+       float:left;
+       width:100%;
+       clear:both;
+       margin: 15px 0px;
+}
+
+#press {
+       display:block;width:785px; background-color:#e17d39;padding:10px;margin:10px 0px; color:#fff;text-align:center;border-radius:10px;min-height:65px;
+}
+
+#press h4 {
+       font-size: 15px;
+       margin: 0px;
+       padding: 0px;
+}
+
+#press a {
+       color: #fff;
+       font-weight: bold;
+}
+
+#press a:hover {
+       color: #ffb888;
+}
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://nwc.co/tweet/jquery.tweet.js" type="text/javascript"></script>
+<script type='text/javascript'>
+       $(document).ready(function(){
+
+console.log($("#filter"));
+      $("#filter").tweet({
+        avatar_size: 32,
+        count: 1,
+        fetch: 20,
+        filter: function(t){ return ! /^@\w+/.test(t["tweet_raw_text"]); },
+        username: "nwc"
+      });
+      
+	//nav hover states
+	$("#myLink img").hover (
+		function() {
+			this.src = this.src.replace("-off","-on");
+		},
+		function() {
+			this.src = this.src.replace("-on","-off");
+		}
+	);
+
+	function preloader() {
+		// counter
+	     var i = 0;
+	     // create object
+	     imageObj = new Image();
+	     // set image list
+	     images = new Array();
+	     images[0]="images/follow-on.png"
+	     images[1]="images/like-on.png"
+	     // start preloading
+	     for(i=0; i<=3; i++) {
+	          imageObj.src=images[i];
+	     }
+	}
+       });
+</script>
+
+<script type="text/javascript" src="http://nwc.co/js/util-functions.js"></script>
+<script type="text/javascript" src="http://nwc.co/js/clear-default-text.js"></script>
+
+<link rel="stylesheet" href="http://nwc.co/barack/Source/BarackSlideshow.css" type="text/css" media="screen" title="Stylesheet" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8" src="http://nwc.co/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://nwc.co/mootools-1.2.2.2-more.js"></script>    
+<script type="text/javascript" charset="utf-8" src="http://nwc.co/Fx.MorphList.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://nwc.co/barack/Source/BarackSlideshow.js"></script>    
+<script type="text/javascript" charset="utf-8" src="http://nwc.co/demo.js"></script>
+
+</head>
+<body>
+<section>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=176779599024";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--
+<link href="/tweet/jquery.tweet.css" rel="stylesheet"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://nwc.co/tweet/jquery.tweet.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    function randomString(length) {
+      var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
+      var str = '';
+      for (var i = 0; i < length; i++) {
+        str += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return str;
+    }
+    var rnd = randomString(8);
+    jQuery(document).ready(function($) {
+      $(".rnd").replaceWith(rnd);
+      $(".example").hide().each(function(i,e){
+        /*$(e).before($('<a class="show-code" href="#">Show code &raquo;</a>').*/
+        $(e).before($('').
+                      click(function(ev) {
+                        $(e).slideToggle();
+                        $(this).hide();
+                        ev.preventDefault();
+                      }));
+      });
+    });
+  </script>
+-->
+
+<header>
+		<social>
+			<twitter><a href="http://meetup.com/coworking-nyc"><img src="http://nwc.co/new/images/coworking_meetup.png" 	border="0"></a></twitter>
+			<twitter><a href="http://twitter.com/nwc"><img src="http://nwc.co/new/images/coworking_twitter.png" width="27" height="26" border="0"></a></twitter>
+			<facebook><a href="http://facebook.com/newworkcity"><img src="http://nwc.co/new/images/coworking_facebook.png" width="27" height="26" border="0"></a></facebook>
+			<rss><a href="http://blog.nwc.co/rss"><img src="http://nwc.co/new/images/coworking_rss.png" width="27" height="26" border="0"></a></rss>
+		</social>
+		<logo><a href="/"><img src="http://nwc.co/new/images/coworking-nyc_new-work-city_logo.png" alt="Coworking NYC | New Work City | New York City" border="0"></a></logo>
+		<contact><a href="/map" target="_blank">412 Broadway at Canal St</a></contact>
+		<trains><a href="/map" target="_blank"><img src="http://nwc.co/new/images/trains.png" width="189" height="24" border="0"></a></trains>
+</header>
+	<navigation>
+        <home><a href="/index.php"></a></home>
+		<item><a href="/about">about</a></item>
+		<item><featured><a href="/membership">membership</a></featured></item>
+		<item><a href="/map">location</a></item>
+		<item><a href="/contact">contact</a></item>
+		<item><a href="/events">events</a></item>
+		<item><a href="http://flickr.com/photos/lupo/galleries/72157625086849401/" target="_new">photos</a></item>
+		<item><a href="/edu">classes</a></item>
+		<item><a href="http://blog.nwc.co">blog</a></item>
+		<item><a href="/faq">faq</a></item>
+		<item><a href="http://nwcchangelog.tumblr.com">changelog</a></item>
+		<item><a href="/press">press</a></item>
+		<item><a href="/thanks">thanks</a></item>
+		
+		<!--
+		<br/><br/>
+		
+		<div style="height: 100px; font-size:12px;margin-right:7px;margin-top:15px;">
+				
+				
+				<a href="http://twitter.com/nwc" target="_blank">&nbsp;<br/><br/>Current Status:</a>
+				<pre class="example">
+				  $(function(){
+				    $(".tweet").tweet({
+				      join_text: "auto",
+				      username: "nwc",
+				      avatar_size: 48,
+				      count: 1,
+				      auto_join_text_default: "",
+				      auto_join_text_ed: "",
+				      auto_join_text_ing: "",
+				      auto_join_text_reply: "",
+				      auto_join_text_url: "",
+				      loading_text: "loading tweets..."
+				    });
+				  });
+				</pre>
+				<div class='tweet query'></div>
+				<script type="text/javascript">
+				  $(function(){ $(".example").each(function(i, e){ eval($(e).text()); }); });
+				</script>
+		</div>
+		-->
+		
+	</navigation>	<!--<showcase>
+		<tagline-one>Helping people kick ass</tagline-one>
+		<tagline-two>since 2008.</tagline-two>
+	</showcase>-->
+	
+       <!-- Commence ze slideshow! -->
+	
+       <div id="slideshow" style="margin-top: 130px; margin-left: 140px;min-height:351px;">    
+	 <span id="loading">Loading</span>
+	 <ul id="pictures">
+	   <li><img src="http://nwc.co/barack/Source/images/cities/alongside.png" alt="Work alongside awesome people." title="Work alongside awesome people." /></li>
+	   <li><img src="http://nwc.co/barack/Source/images/cities/by-the-people.png" alt="By the people." title="By the people." /></li>
+	   <li><img src="http://nwc.co/barack/Source/images/cities/changing-work.png" alt="Changing work as we know it." title="Changing work as we know it." /></li>
+	   <li><img src="http://nwc.co/barack/Source/images/cities/just-show-up.png" alt="Just show up." title="Just show up." /></li>
+	 </ul>
+	 <ul id="menu" style="display:none;">
+	   <li><a href="http://nwc.co/barack/Source/images/cities/nateluke.png">Nate</a></li>
+	   <li><a href="http://nwc.co/barack/Source/images/cities/donshot.jpg">Don<br>Shot</a></li>
+	   <li><a href="http://nwc.co/barack/Source/images/cities/coparty.jpg">Coparty</a></li>
+	 </ul>
+       </div>
+	 
+       <div id="slideshow-options" style="visibility:invisible;display:none;">
+	 <h3><label for="option-auto">Auto</label> <input type="checkbox" name="auto" checked="checked" id="option-auto" /></h3>
+	 <ul>                     
+	   <li><input type="radio" name="transition" value="fade" id="transition-fade" checked="checked" autocomplete="on" /> <label for="transition-fade">fade</label></li>     
+	 </ul>
+       </div>
+       
+       <!-- /slideshow -->
+	
+	<information style="width:800px; height:auto;">
+	      New Work City is a coworking space and community center for independents.
+	      Built by its members as a community first and a business second, we aim
+	      to make the world a better place by empowering people to make a living
+	      doing things they love.
+	      
+	      <p><strong>Want to drop in for a day?</strong> Yeah, we do that too! No appointment necessary. Just show up! We open to the public at 9:00 on weekdays. Most days, you can work just about as late into the evening as you'd like.</p>
+	      
+	      <table style="width:807px; margin-top: 10px;">
+		     <tr>
+			    <td style="width:82px;">
+				   <img src="http://nwc.co/images/circle-yellow.png" style="margin-right:15px;"/>
+			    </td>
+			    <td style="width:487px;">
+				   <subheadline>Join our coworking community.</subheadline>
+				   <content>
+					  <strong>Work alongside awesome people. From $30/day to $300/month.</strong>
+				   </content>
+				   <content>
+					  Need to get out of your house? Grab a laptop and come on over.
+					  <br/>We're open to all, no appointments necessary!
+				   </content>
+			    </td>
+			    <td style="width:238px;">
+				   <a href="/membership">
+				   <div id="yellowbox">
+					  <h3 style="margin:12px 0px 10px 0px;">Learn about membership</h3>
+					  Join an amazing community
+				   </div>
+				   </a>
+			    </td>
+		     </tr>
+		     <tr>
+			    <td style="">
+				   <img src="http://nwc.co/images/circle-green.png" style="margin-right:15px;"/>
+			    </td>
+			    <td>
+				   <subheadline>Learn how to be awesomer.</subheadline>
+				   <content>
+					  <strong>Classes, workshops, meetups, labs and more. </strong>
+				   </content>
+				   <content>
+					  Our educational programming is designed to help you start and better manage your independent career. 
+				   </content>
+			    </td>
+			    <td>
+				   <a href="/events">
+				   <div id="greenbox">
+					  <h3 style="margin:22px 0px 0px 0px;">See upcoming events</h3>
+					  Build, learn, or share something
+				   </div>
+				   </a>
+			    </td>
+		     </tr>
+	      </table>
+	      
+	      <a href="http://nwc.co/newsletter" target="_blank">
+	      <div id="newsletter">
+		     <subheadline>Sign up for our newsletter</subheadline><br/>
+		     Keep up to date on all of our exciting happenings! We won't share or spam.
+	      </div>
+	      </a>
+	      
+	      <div id="faqbox">
+		     <table style="width:100%;">
+			    <tr>
+				   <td colspan="2">
+					  <subheadline>So what's the deal with this coworking thing, anyway?</subheadline>
+				   </td>
+			    </tr>
+			    <tr>
+				   <td>
+					  <p>Coworking is a concept that represents the shared values and needs of a new generation of workers who can work where, when, and how they want. When enough of these people get together in a common place, a coworking community is born.</p>
+
+					  <p>It's what would happen if you took the good parts of an office, a cafe, and a treehouse and glued it all together with awesome, creative, brilliant people.</p>
+					  
+					  <p>New Work City espouses the values of community, openness, collaboration, sustainability, and accessibility. To learn more about the global coworking movement, head <a href="http://coworking.com" target="_blank">here</a>!</p>
+					  
+					  <div style="float:left; width:178px; margin-right:10px;">
+							<strong>Do I have to sign a lease?</strong><br/>
+							Nopers! Our memberships are like gym memberships.
+					  </div>
+					  <div style="float:left; width:178px; margin-right:10px;">
+							<strong>What are the hours?</strong><br/>
+							We open at 9am. Members work as late as they like.
+					  </div>
+					  <div style="float:left; width:188px;">
+							<strong>Who works there?</strong><br/>
+							Freelancers, startups, creatives, hackers, geniuses, and more!
+					  </div>
+				   </td>
+				   <td>
+					  <a href="http://coworking.com" target="_blank">
+						 <img src="http://nwc.co/images/working-alone-sucks.png" border="0" style="margin-top:-25px;"/>
+					  </a>
+				   </td>
+			    </tr>
+		     </table>
+		          
+		     <div id="press">
+			    <div style="float:left; width:226px; text-align:center;">
+				   <h4>"The 'granddaddy' of NYC coworking spaces"</h4>
+				   Fred Wilson
+			    </div>
+			    <div style="float:left; width:256px; text-align:center; margin-right:15px;">
+				   <h4>"Somewhere between the executive suite and your corner coffee shop lies New Work City."</h4>
+				   NY1
+			    </div>
+			    <div style="display:block; float:left; width:273px; text-align:center; clear:right; margin-bottom:10px;">
+				   <h4>"New Work City is more than just a coworking center; it might even turn out to be a movement."</h4>
+				   WebWorkerDaily
+			    </div>
+			    <div style="margin-top:10px; width:100%;">
+				   Learn more about us in 
+				   <a href="http://online.wsj.com/article/SB10001424052748704152804574628253322262872.html" target="_blank">Wall Street Journal</a>,
+				   <a href="http://www.npr.org/templates/story/story.php?storyId=122252297&amp;sc=nl&amp;cc=nh-20100106" target="_blank">NPR</a>,
+				   <a href="http://www.inc.com/magazine/20101001/start-ups-2010-how-to-launch-a-co-working-facility.html" target="_blank">Inc Magazine</a>,
+				   <a href="http://www.entrepreneur.com/magazine/entrepreneur/2009/october/203414.html" target="_blank">Entrepreneur Magazine</a>,
+				   <a href="http://www.nytimes.com/2010/07/26/technology/26night.html?ref=jenna_wortham" target="_blank">NY Times</a>,
+				   <a href="http://www.observer.com/2009/media/mayor-announces-15-million-bailout-plan-citys-media-and-tech-industry" target="_blank">Observer</a>,
+				   <!--<a href="http://www.ny1.com/8-queens-news-content/top_stories/111799/soho-workspace-keeps-an-open-mind" target="_blank">NY1</a>,-->
+				   <!--<a href="http://webworkerdaily.com/2009/04/02/new-work-city-coworking-and-more-in-manhattan/" target="_blank">Web Worker Daily</a>,-->
+				   and
+				   <a href="http://blogs.discovery.com/nerdabout_new_york/2009/02/new-work-city-youll-never-work-alone-again.html" target="_blank">Discovery</a>!
+			    </div>
+		     </div>
+	      
+	      </div>
+	      <table width="100%"><tr>
+		<td style="vertical-align:top;">
+			<h3 style="font-size: 24px;font-weight: bold;letter-spacing: -1px;margin-top:0px;">Learn more about NWC</h3>
+				<div style="margin-bottom:15px;">Our good friends at .CO internet produced this video as part of their
+				<a href="http://underthebulb.co" target="_blank">Under the Bulb</a> campaign.<br/>
+				It gives a great overview of the space, the community, and what NWC is all about!</div>
+				<iframe width="540" height="333" src="http://www.youtube.com/embed/7jrF_ezSwdo?hd=1" frameborder="0" allowfullscreen></iframe>
+		</td><td width="270px" style="vertical-align:top;">
+			<div style="margin-left:15px;">
+				<h3 style="font-size: 24px;font-weight: bold;letter-spacing: -1px;margin-top:0px;">Photos</h3>
+				<a href="http://flickr.com/photos/lupo/galleries/72157625086849401/">
+					<img src="http://nwc.co/images/flickr-thumb-1.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-2.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-3.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-4.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-5.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-6.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-7.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-8.jpg" border="0"/>
+					<img src="http://nwc.co/images/flickr-thumb-9.jpg" border="0"/>
+				</a>
+				<h3 style="margin-top:15px;">Our fabulous sponsor</h3>
+				<div style="width:100%;margin:0 auto;text-align:center;">
+				   <a href="http://hp.com" target="_blank"><img src="http://nwc.co/images/hp-85.jpg" border=0 height=85px></a>
+				</div>
+			</div>
+		</td></tr></table>
+	      <div style="width:100%;margin-top:15px;">
+			New Work City is the result of the collective effort of a community of people who share a common set of values and needs.
+			We are <a href="http://nytm.org/made/">proudly built and based in New York City</a>, the greatest city in the world.
+			To learn more about the amazing people who make New Work City possible, visit our <a href="/about">about</a> and <a href="/thanks">thanks</a> pages.
+			We are a part of the global <a href="http://coworking.com">coworking movement</a>, and if anyone says it's spelled co-working, send them
+			<a href="http://doescoworkinghaveahyphen.com" target="_blank">here</a> to correct them!
+	      </div>
+	</information>
+	
+		<footer>
+		<contact>New Work City 
+		&nbsp;&nbsp; &#149; &nbsp;&nbsp; <a href="/map">412 Broadway, Floor 2, NY NY 10013</a>
+		&nbsp;&nbsp;  &#149; &nbsp;&nbsp; <a href="mailto:hello@nwc.co">hello@nwc.co</a>
+		&nbsp;&nbsp;  &#149; &nbsp;&nbsp; <a href="http://twitter.com/nwc">@nwc</a>
+		&nbsp;&nbsp;  &#149; &nbsp;&nbsp; (212) 226-1585 
+
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2400088-5']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+		
+ 	</footer>
+	
+</section>
+</body>
+</html>
